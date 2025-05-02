@@ -49,7 +49,7 @@ CreativeNest addresses the financial challenges faced by emerging creators in ac
 | Backend        | Node.js, Express.js  |
 | Database       | MongoDB              |
 | Version Control| Git & GitHub         |
-| Hosting        | (To be decided or add if hosted) |
+
 
 ---
 
