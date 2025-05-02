@@ -1,0 +1,185 @@
+.header{
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header.listmode{
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 80px; 
+}
+
+.headerContainer{
+  width: 100%;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode{
+  margin: 20px, 0px, 0px, 0px;
+}
+
+.headerList{
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.headerListItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerListItem.active{
+ border: 1px solid white;
+ padding: 10px;
+ border-radius: 20px;
+}
+
+.headerTitle{
+  margin-left: 10px;
+  font-size: 40px;
+}
+
+.headerDesc{
+ margin: 20px 0px;
+ margin-left: 10px;
+ font-weight: 300px;
+}
+/*
+.headerBtn{
+  background-color: white;
+  color: #003580;
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+*/
+
+.headerBtn {
+  background-color: white;
+  color: #003580;
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-left: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform */
+}
+
+/* Add hover effect with animation */
+.headerBtn:hover {
+  transform: scale(1.1); /* Slightly increase the size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Optional: Add a subtle pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.headerBtn:active {
+  animation: pulse 0.3s ease-in-out; /* Pulse animation on click */
+}
+
+.headerSearch{
+  height: 30px;
+  background-color: white;
+  border: 4px solid rgb(248, 248, 13);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -18px;
+  width: 100%;
+  max-width: 1024px;
+  margin-left: 150px;
+}
+
+.headerIcon{
+  color: black;
+}
+
+.headerSearchItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput{
+  border: none;
+  outline: none;
+}
+
+.headerSearchText{
+  color: rgb(12, 12, 12);
+  cursor: pointer;
+}
+
+.headerBtn1{
+  padding: 3px;
+  background-color: #2761b3;
+  border: none;
+  border-radius: 40px;
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.date{
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.options{
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 4);
+  margin-left: 500px;
+}
+
+.optionItem{
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.optionCounter{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.optionCounterButton{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #003580;
+  color: #003580;
+  cursor: pointer;
+  background-color: white;
+}

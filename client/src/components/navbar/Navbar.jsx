@@ -1,0 +1,31 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "./navbar.css"
+import { faStudiovinari } from "@fortawesome/free-brands-svg-icons/faStudiovinari"
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
+
+const Navbar = () => {
+  const { user } = useContext(AuthContext);
+
+  return (
+    <div className="navbar">
+      <div className="navContainer">
+        <div className="container">
+        <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+        <span className="logo">CreativeNest</span>
+        </Link>
+        <FontAwesomeIcon icon={faStudiovinari} className="logo2"/>
+        </div>
+        {user ? user.username : (
+        <div className="navItems">
+          <button className="navButton">Register</button>
+          <button className="navButton">Login</button>
+        </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+export default Navbar

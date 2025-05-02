@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar{
+  height: 50px;
+  background-color: #002861;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-size: 25px;
+  font-weight: 900px;
+  margin-left: 10px;
+}
+
+.logo2{
+ margin-left: 5px;
+ font-size: 30px;
+}
+
+.navButton{
+  margin-left: 15px;
+  margin-right: 10px;
+  border: 2px;
+  border-color: aliceblue;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+  color: #003580;
+}

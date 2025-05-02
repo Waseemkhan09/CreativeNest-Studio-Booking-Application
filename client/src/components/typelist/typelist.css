@@ -1,0 +1,33 @@
+.tlist{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tlistItem{
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.plistImg{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.plistTitle{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.plistTitle>h1{
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.plistTitle>h2{
+  font-size: 14px;
+  font-weight: 300px;
+}
